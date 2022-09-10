@@ -5,22 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fz-News</title>
+    <!-- favicon added  -->
     <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
 
+    <!-- bootstrap v5.2 added -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+    <!-- fontawesome added -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- animate.style added  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- my Css added  -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
+        <!-- nav started -->
         <section id="header-up">
-
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container">
                     <a class="navbar-brand " href="#">
@@ -56,13 +63,20 @@
 
 
         </section>
-        <div class="container mt-5 " id="catagories">
-            <p class="bg-white  py-2 px-3 mx-auto rounded-end border-left d-inline-block d-md-none">Catagories</p>
-            <ul class="d-flex list-unstyled justify-content-around flex-wrap  gap-y" id="catagory-wrap">
+        <!-- nav End -->
 
-            </ul>
+        <!-- Catagory Section start  -->
+        <section id="header-down">
+            <div class="container mt-3 " id="catagories">
+                <p class="bg-white  py-2 px-3 mx-auto rounded-end border-left d-inline-block d-md-none">Catagories</p>
+                <ul class="d-flex list-unstyled justify-content-around flex-wrap  gap-y" id="catagory-wrap">
 
-        </div>
+                </ul>
+
+            </div>
+        </section>
+        <!-- Catagory Section End -->
+
     </header>
 
     <main>
@@ -83,7 +97,9 @@
             </div>
         </div>
         <!-- modal End -->
-        <section class="my-5">
+
+        <!-- main functionality section start  -->
+        <section class="py-3" id="functional-main">
             <div class="container mt-5 ">
                 <p class="bg-white  py-2 ps-3 rounded-end border-left " id="post-count">
 
@@ -98,32 +114,44 @@
             </div>
 
         </section>
+        <!-- main functionality section End -->
 
 
+        <!-- post section start  -->
+        <section id="post">
+            <div class="container my-5">
 
-        <div class="container my-5">
-
-            <div id="spinner" class="d-flex align-items-center justify-content-center d-none" style="height:60vh">
-                <div class="spinner-grow text-primary" style="width: 5rem; height: 5rem;" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                <!-- spinner div start  -->
+                <div id="spinner" class="d-flex align-items-center justify-content-center d-none" style="height:60vh">
+                    <div class="spinner-grow text-primary" style="width: 5rem; height: 5rem;" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
                 </div>
-            </div>
-            <div id="post-container">
+                <!-- spinner div End  -->
 
+                <!-- post section start  -->
+                <div id="post-container">
+
+                </div>
+                <!-- post section End -->
+
+                <!-- Nothing-found-msg start  -->
+                <div class=" text-center d-none" id="Nothing-found-msg">
+                    <img src="https://cdn.dribbble.com/users/962778/screenshots/4107007/search_states.gif" alt=""
+                        class="img-fluid">
+                </div>
+                <!-- Nothing-found-msg End  -->
 
             </div>
-            <div class=" text-center d-none" id="Nothing-found-msg">
-                <img src="https://cdn.dribbble.com/users/962778/screenshots/4107007/search_states.gif" alt=""
-                    class="img-fluid">
-            </div>
+        </section>
+        <!-- post section End  -->
 
-        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
-
+    <!-- my Js File integretion  -->
     <script src="script/catagory.js"></script>
     <script src="script/modal.js"></script>
     <script src="script/loading.js"></script>

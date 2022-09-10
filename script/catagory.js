@@ -16,7 +16,7 @@ const displayCatagory = (catagories) => {
     const li = document.createElement("li");
 
     li.innerHTML = ` 
-    <a href="#" onclick="loadPost('${catagory.category_id}','${catagory.category_name}')" id='c${catagory.category_id}'class=" catagory-link text-decoration-none text-muted py-2 px-3 border border-1 rounded-pill border-muted bg-white">${catagory.category_name}</a>
+    <a href="#header-down" onclick="loadPost('${catagory.category_id}','${catagory.category_name}')" id='c${catagory.category_id}'class=" catagory-link text-decoration-none text-muted py-2 px-3 border border-1 rounded-pill border-muted bg-white">${catagory.category_name}</a>
     `;
     catagorySection.append(li);
   });
