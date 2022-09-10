@@ -12,7 +12,13 @@ const loadPost = async (id, name) => {
   }
 };
 const displayPost = (posts, name) => {
+  // sorting the arrray by view
+  posts.sort((a = 0, b = 0) => {
+    return b.total_view - a.total_view;
+  });
+  //display the count data
   displayCount(posts.length, name);
+
   const postBox = document.getElementById("post-container");
   const noFoundMsg = document.getElementById("Nothing-found-msg");
   postBox.innerHTML = ``;

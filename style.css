@@ -3,7 +3,17 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #F8F9FA;
 }
-
+.nav-link ,.catagory-link{
+    transition: all .3s;
+}
+.nav-link:hover{
+    color:#0D6EFD !important;
+    font-weight: bold ;
+}
+.catagory-link:hover{
+    background:#0D6EFD !important;
+    color:#fff !important;
+}
 .catagory-link:focus{
     background:#0D6EFD !important;
     color:#fff !important;
@@ -13,4 +23,8 @@ body{
 }
 .gap-y>*{
     padding:20px 0;
+}
+#sort{
+    outline:none;
+    border-color: lightgray;
 }
