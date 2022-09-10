@@ -8,3 +8,9 @@ body{
     background:#0D6EFD !important;
     color:#fff !important;
 }
+.border-left{
+    border-left: 8px solid #0D6EFD;
+}
+.gap-y>*{
+    padding:20px 0;
+}

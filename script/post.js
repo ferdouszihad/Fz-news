@@ -1,16 +1,18 @@
-const loadPost = async (id) => {
+const loadPost = async (id, name) => {
+  console.log(name);
   toggleSpinner(true);
   let url = `https://openapi.programming-hero.com/api/news/category/${id}`;
 
   try {
     const res = await fetch(url);
     const data = await res.json();
-    displayPost(data.data);
+    displayPost(data.data, name);
   } catch (error) {
     console.log(error);
   }
 };
-const displayPost = (posts) => {
+const displayPost = (posts, name) => {
+  displayCount(posts.length, name);
   const postBox = document.getElementById("post-container");
   const noFoundMsg = document.getElementById("Nothing-found-msg");
   postBox.innerHTML = ``;
@@ -85,6 +87,13 @@ const displayPost = (posts) => {
     `;
     postBox.append(article);
     toggleSpinner(false);
-    console.log(post);
+    //console.log(post);
   });
 };
+
+const displayCount = (value, name) => {
+  const postCount = document.getElementById("post-count");
+  postCount.innerHTML = `<b>${value}</b>  News Found in the <b class="text-primary">${name}</b> catagory`;
+};
+
+loadPost("04", "Sports");
