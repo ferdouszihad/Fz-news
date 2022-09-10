@@ -14,16 +14,9 @@ const displayCatagory = (catagories) => {
   catagories.forEach((catagory) => {
     //console.log(catagory);
     const li = document.createElement("li");
-    li.classList.add(
-      "py-2",
-      "px-3",
-      "border",
-      "border-2",
-      "rounded-pill",
-      "border-muted"
-    );
+
     li.innerHTML = `
-    <a href="#" onclick="loadPost('${catagory.category_id}')" id='c${catagory.category_id}'class="text-decoration-none text-muted ">${catagory.category_name}</a>
+    <a href="#" onclick="loadPost('${catagory.category_id}')" id='c${catagory.category_id}'class=" catagory-link text-decoration-none text-muted py-2 px-3 border border-1 rounded-pill border-muted bg-white">${catagory.category_name}</a>
     `;
     catagorySection.append(li);
   });
