@@ -35,13 +35,13 @@ const displayPost = (posts, name) => {
             </div>
 
             <div class="col-md-9">
-                <div class="card-body h-100  d-flex flex-column justify-content-between ">
+                <div class="card-body h-100  d-flex flex-column justify-content-around ">
 
                     <h5 class="card-title">${post.title}</h5>
                     <p class="card-text">${post.details.slice(0, 300)}...</p>
 
-                    <div class="card-foot d-flex justify-content-between">
-                        <div class="author d-flex justify-content-between">
+                    <div class="card-foot d-flex justify-content-between flex-column flex-md-row gap-3">
+                        <div class="author d-flex ">
                             <div class="author-img">
                                 <img src="${
                                   post.author.img
@@ -70,11 +70,13 @@ const displayPost = (posts, name) => {
                             <i class="fa-regular fa-eye pe-2"></i>${
                               post.total_view == null
                                 ? "no data found"
-                                : post.total_view
+                                : post.total_view + "K"
                             }
 
                         </div>
-                        <button class="btn btn-primary">Read more <i
+                        <button class="btn btn-primary" data-bs-toggle="modal" onclick='loadDetail("${
+                          post._id
+                        }")' data-bs-target="#postDetailModal">Read more <i
                                 class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
@@ -87,13 +89,15 @@ const displayPost = (posts, name) => {
     `;
     postBox.append(article);
     toggleSpinner(false);
-    //console.log(post);
+    console.log(post);
   });
 };
 
 const displayCount = (value, name) => {
   const postCount = document.getElementById("post-count");
-  postCount.innerHTML = `<b>${value}</b>  News Found in the <b class="text-primary">${name}</b> catagory`;
+  postCount.innerHTML = `Showing <b class="text-danger px-1">${
+    value < 10 && value > 0 ? "0" + value : value
+  }</b>  News from the <b class="text-primary"> ${name}</b> catagory`;
 };
 
 loadPost("04", "Sports");

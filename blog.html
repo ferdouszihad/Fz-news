@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fz-Blog</title>
+    <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section id="header-up">
+
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container">
+                    <a class="navbar-brand " href="#">
+                        <span class="fw-bold text-light text-bg-primary px-1 py-2 rounded-3 shadow "> FZ </span>
+                        <span class="fw-bold text-light text-bg-dark px-2 rounded-end"> News </span>
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav d-flex align-items-center gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="index.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-primary fw-bold" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img src="images/user-img.png" alt="" width="50"
+                                        class="rounded-circle border border-3 border-primary">
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+            </nav>
+
+
+        </section>
+    </header>
+
+    <main>
+        <div class="container my-5">
+
+            <p class="bg-white  py-2 px-3 mx-auto rounded-end border-left ">JavaScript interview question and answers
+            </p>
+        </div>
+        <div id="post-container" class="container">
+            <article>
+                <div class="card mb-3 p-4 border-0 shadow">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-3">
+                            <img src="https://media3.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=6c09b952idha5aup76uk729ej5nrwowvv34ttf3qw7t6wcwp&rid=giphy.gif&ct=s"
+                                class="img-fluid rounded-start w-100" alt="...">
+                        </div>
+
+                        <div class="col-md-9">
+                            <div class="card-body h-100  d-flex flex-column justify-content-around ">
+
+                                <h5 class="card-title">Difference Between 'var' 'let' and 'Const'</h5>
+                                <p class="card-text">
+                                    var , let & const all are use for declaring variable.but there are so many
+                                    diffrence between them. We are showing the key differences between them
+                                    <hr>
+                                    var act as a global variable. if we declare a variable using var , it can be
+                                    accessable by all the function . which can create data loss and complexity.
+                                    <hr>
+                                    let is the latest Es6 feature of declaring variable. if we declare a variable
+                                    using let.It will work only inside the area of function. We can declare a
+                                    variable only once by let. thats the good practice.
+                                    <hr>
+                                    const is the feature of ES6 .if we declare a varibale using const then,the value
+                                    cant be modified or redeclared.It act like a constant value.It also work inside
+                                    its scope. The Variable declared with const can not be modiified.using const is
+                                    a good practice.
+
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="card mb-3 p-4 border-0 shadow">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-3">
+                            <img src="https://c.tenor.com/VpZ2Nf5gdRYAAAAC/pc-banging.gif"
+                                class="img-fluid rounded-start w-100" alt="...">
+                        </div>
+
+                        <div class="col-md-9">
+                            <div class="card-body h-100  d-flex flex-column justify-content-around ">
+
+                                <h5 class="card-title">map() , foreach() , filter() , find()</h5>
+                                <p class="card-text">
+                                    map , foreach , filter , find are the arrowfunction method for an array. these
+                                    function can be used only on the variable which are array
+                                    <hr>
+                                    <b>Map(num => num*2)</b>
+                                    Map function takes each of the array element and transform the array by
+                                    following equation(n*2) and return the modified array as an array.The
+                                    modification doesnot affect the orginal array.
+                                    <hr>
+                                    <b>forEach(num => console.log(num))</b>
+                                    foreach function works same as map. but the foreach function doesnt return any
+                                    value, and also it doesnot affect the orginal array also.
+                                    <hr>
+                                    <b>filter(num => num > 30) </b>
+                                    filter function contain a condition . it takes all element of the array and
+                                    check every element with the conndition. It make another array with all the
+                                    elements that checked as true. the array is returned by filter function.
+                                    <hr>
+                                    <b>find(num => num > 30)</b>
+                                    find works same as filter method. but it returns the first true value of the
+                                    array element which makes the condition true.find returns only a number which is
+                                    the true value for the condition.
+
+
+
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="card mb-3 p-4 border-0 shadow">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-3">
+                            <img src="https://umaar.com/assets/images/dev-tips/vs-code-template-string-conversion.gif"
+                                class="img-fluid rounded-start w-100" alt="...">
+                        </div>
+
+                        <div class="col-md-9">
+                            <div class="card-body h-100  d-flex flex-column justify-content-around ">
+
+                                <h5 class="card-title">Why we use Template String?? </h5>
+                                <p class="card-text">
+                                    template string is one of the best feature of ES-6. The Template String can
+                                    print the newline without declaring by \n , and it can takes variable and any
+                                    expression inside it.
+                                    <hr>
+                                    <b>Reason to use template String</b>
+                                    1. Template String can detect newline . <br>
+                                    2. We can use any variable inside it by using ${varName}this. <br>
+                                    3. We can use any type of expression and code inside a string. <br>
+                                    4. We dont need to concat strings in a complex way. The Dynamic String making is
+                                    now quite easy for the template string feature. <br>
+
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+        </div>
+
+
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
