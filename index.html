@@ -4,95 +4,58 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>News Blog</title>
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Fz-News</title>
+    <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
 
-    <!-- Font Awesome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <header>
-        <section class="mt-2">
-            <nav class="navbar navbar-expand-lg container top-fixed rounded bg-light">
-                <div class="container-fluid ">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                        aria-label="Toggle navigation">
+        <section id="header-up">
+
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container">
+                    <a class="navbar-brand " href="#">
+                        <span class="fw-bold text-light text-bg-primary px-1 py-2 rounded-3 shadow "> FZ </span>
+                        <span class="fw-bold text-light text-bg-dark px-2 rounded-end"> News </span>
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse align-items-center" id="navbarTogglerDemo01">
-                        <a class="navbar-brand bold  fw-bold fst-italic" href="#">FZ-NEWS</a>
-                        <ul class="navbar-nav me-auto  mb-lg-0">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav d-flex align-items-center gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link active text-primary fw-bold" aria-current="page" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img src="images/user-img.png" alt="" width="50"
+                                        class="rounded-circle border border-3 border-primary">
+                                </a>
+                            </li>
+
                         </ul>
-                        <div class="nav-item">
-                            <a class="nav-link mx-3 fw-bold text-primary" href="#"> Home </a>
-                        </div>
-                        <div class="nav-item">
-                            <a class="nav-link mx-3" href="blog.html"> Blog </a>
-                        </div>
-
-                        <a href="#" class="mx-3"><img class="img-header" src="images/user_icon.png" width="40"
-                                alt=""></a>
-
                     </div>
                 </div>
             </nav>
+
+
         </section>
+
+
+
     </header>
-
-
-    <main>
-        <div class="container" id="main-wrap">
-            <hr>
-
-            <!-- short by view section  -->
-            <section class="d-flex mt-5 align-items-baseline justify-content-between">
-                <div class="d-flex align-items-baseline">
-                    <div>
-                        <p class="me-2">Sort By View: </p>
-                    </div>
-                    <div>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Default</option>
-                            <option value="1">Most Populer</option>
-                            <option value="2">New</option>
-                        </select>
-                    </div>
-
-                </div>
-                <div class="d-flex ">
-                    <div>
-                        <button type="button" class="btn btn-outline-primary active me-2">Today's Pick</button>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-outline-primary">Trending</button>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-    </main>
-
-    <!-- footer section  -->
-    <footer class="bg-black mt-5 text-muted fst-italic text-center fixed-bottom">
-        <p>Copyright 2022 FZ-News - Ferdous Zihad</p>
-    </footer>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
-
-    <!-- My javascript file integrations -->
-    <script src="script/index.js"></script>
-
 </body>
 
 </html>
