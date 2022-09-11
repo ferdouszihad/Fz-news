@@ -32,11 +32,7 @@ const displayPost = (posts, name) => {
   }
   posts.forEach((post) => {
     let article = document.createElement("article");
-    // article.classList.add(
-    //   "animate__animated",
-    //   "animate__backInDown",
-    //   "animate__delay-1s"
-    // );
+    article.classList.add("animate__animated", "animate__backInDown");
     article.innerHTML = `
 
     <div class="card mb-3 p-4 border-0 shadow">
