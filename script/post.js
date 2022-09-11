@@ -6,11 +6,13 @@ const loadPost = async (id, name) => {
   try {
     const res = await fetch(url);
     const data = await res.json();
+
     displayPost(data.data, name);
   } catch (error) {
     console.log(error);
   }
 };
+
 const displayPost = (posts, name) => {
   // sorting the arrray by view
   posts.sort((a = 0, b = 0) => {
@@ -30,7 +32,11 @@ const displayPost = (posts, name) => {
   }
   posts.forEach((post) => {
     let article = document.createElement("article");
-    article.classList.add("animate__animated", "animate__backInDown");
+    // article.classList.add(
+    //   "animate__animated",
+    //   "animate__backInDown",
+    //   "animate__delay-1s"
+    // );
     article.innerHTML = `
 
     <div class="card mb-3 p-4 border-0 shadow">
@@ -95,8 +101,11 @@ const displayPost = (posts, name) => {
     
     `;
 
-    postBox.append(article);
-    toggleSpinner(false);
+    const myTimeout = setTimeout(() => {
+      postBox.append(article);
+      toggleSpinner(false);
+    }, 1500);
+
     console.log(post);
   });
 };

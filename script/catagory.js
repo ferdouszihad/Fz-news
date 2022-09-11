@@ -17,7 +17,7 @@ const displayCatagory = (catagories) => {
     li.classList.add(
       "animate__animated",
       "animate__backInUp",
-      "animate__delay-1s"
+      "animate__delay-.3s"
     );
 
     li.innerHTML = ` 

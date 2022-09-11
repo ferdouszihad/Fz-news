@@ -13,9 +13,7 @@ const displayDetail = (post) => {
   const postBody = document.getElementById("modal-body");
   postBody.innerHTML = ` 
     <div class="card mb-3 border-0 animate__animated animate__fadeInDown">
-        <img src="${
-          post.image_url
-        }" class="card-img-top animate__animated animate__fadeInUp" alt="...">
+        <img src="${post.image_url}" class="card-img-top " alt="...">
         <div class="card-body ps-0">
             <h5 class="card-title pb-2 border-bottom">${post.title}</h5>
             <p class="card-text py-3" style='text-align:justify'>${
